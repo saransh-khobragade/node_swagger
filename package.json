@@ -1,0 +1,22 @@
+{
+  "name": "node_swagger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saru998/node_swagger.git"
+  },
+  "author": "Saransh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saru998/node_swagger/issues"
+  },
+  "homepage": "https://github.com/saru998/node_swagger#readme",
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}
