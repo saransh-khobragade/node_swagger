@@ -1,0 +1,42 @@
+path:
+  /ping:
+    get:
+      summary: ping pong
+      tags: [ping]
+      parameters:
+        - in: query
+          name: type
+          example: test_message
+          schema:
+            type: string
+          required: true
+          description: type
+        
+      responses:
+        '200':
+          description: ok
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status message success / failure
+                  trace_id:
+                    type: string
+                  status_code:
+                    type: number
+                    description: Response code
+                  message:
+                    type: string
+                    description: success message
+                  data:
+                    type: object
+                    properties:
+                      test_id: 
+                        type: integer
+                        description: unique id in suppliers
+                      
+
+  
